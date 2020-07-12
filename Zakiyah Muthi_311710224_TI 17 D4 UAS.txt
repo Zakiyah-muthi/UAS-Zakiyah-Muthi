@@ -1,0 +1,77 @@
+==================
+Soal Ujian Akhir Semester
+Matkul : Arsitektur dan organisasi Komputer
+Kelas : TI.17.D3 & TI.17.D4
+Universitas Pelita Bangsa
+2020
+================
+Nama	: Zakiyah Muthi
+NIM	: 311710224
+Kelas	: TI 17 D4
+
+1. Dalam arsitektur komputer ada 4 komponen Utama CPU, Sebutkan dan jelaskan kegunanaanya?
+2. Control Unit adalah bagian dari komputer yang menggenerasi signal yang mengontrol operasi
+komputer, sebutkan jenis apa saja yang termasuk Control Unit?
+3. Set instruksi (instruction set) adalah sekumpulan lengkap instruksi yang dapat di mengerti oleh sebuah
+CPU. Set instruksi sering juga disebut sebagai bahasa mesin . sebutkan macam-macam format
+Instruksi?
+4. Direct Memory Access (DMA) adalah suatu metode transfer data dari memori komputer atau RAM ke
+suatu bagian dari komputer tanpa memprosesnya menggunakan CPU. Sebutkan kelebihan
+menggunakan DMA ?
+5. Pipeline adalah mesin yang melaksanakan beberapa komputasi yang berbeda secara bersama-sama
+,namun pada saat itu setiap komputasi akan berada dalam tahapan eksekusi yang berbeda. Sebutkan
+dua kategori Pipeline ?
+
+
+Jawaban Soal UAS 
+
+1. 1.Arihtmetic Logikal Unit (ALU)
+ 	- Melakukan komputasi untuk pengolahan data
+	- Melakukan tugas-tugas dasat aritmatik dan operasi logika
+   2. Control Unit
+	- Mengontrol perpindahan data dan instruksi ke CPU atau dari CPU
+	- Mengontrol operasi ALU
+	- Mendecode instruksi program dan menyediakan sinyal-sinyal kontrol yang bersesuaian
+   3. Register
+	- Memori internal yang didesain untuk dapat menyimpan data lebih cepat dibandingkan memori utama
+   4. Internal Bus
+	- Jalur yang berfungsi sebagai jembatan komunikasi antara komponen utama
+
+2. 1. Control Unit Microprogrammed
+	- Untuk menggenerasi signal kontrol dengan cara membaca dan mengeluarkan atau mengalirkan mikroinstruksi
+   2. Control Unit Konvensional /Hard-Wired
+	- Untuk menggenerasi signal kontrol.
+	- Digunakan pada komputer berkinerja tinggi (super komputer) dan RISC
+	- Digunakan pada komputer berkinerja tinggi (super komputer) dan RISC
+	- Komputer Mainframe sering menggunakannya untuk aritmetik, logika  dan shift sederhana dan instruksi akses memori.
+	- CU Konvensional menghasilkan suatu rangkaian mirointruksi.
+	- Perbedaannya dengan CU Microprogrammed terletak pada gerbang logikanya menggenerasi semua mikroorder sehingga
+	  eksekusinya lebih cepat.
+
+3. 1. Format instruksi 3 alamat
+	Mempunyai bentuk umum seperti : [OPCODE][AH],[AO1],[AO2]. Terdiri dari satu alamt hasil, dan dua alamat operand
+	Contoh: SUB Y,A,B  Y := A – B
+   2. Format instruksi 2 alamat
+	Mempunyai bentuk umum : [OPCODE][AH],[AO]. Terdiri dari satu alamat hasil merangkap operand, satu alamat operand
+	Contoh: SUB Y,B  Y:= Y – B
+   3. Format instruksi 1 alamat
+	Mempunyai bentuk umum : [OPCODE][AO]. Terdiri dari satu alamat operand, hasil disimpan di accumulator
+	Contoh : SUB B   AC:= AC – B
+   4.Format instruksi 0 alamat
+	Mempunyai bentuk umum : [OPCODE]. Terdiri dari semua alamat operand implicit, disimpan dalam bentuk stack. 
+	Operasi yang biasanya membutuhkan 2 operand, akan mengambil isi stack paling atas dan dibawahnya
+	missal : SUB yang mempunyai arti dalam algoritmik : S[top]:=S[top-1]-S[top] dan arti dalam bentuk penjelasan :
+	kurangkan isi stack no2 dari atas dengan isi stack paling atas, kemudian simpan hasilnya di stack paling atas,
+	untuk mengoprasikan ada beberapa instruksi khusus stack PUSH dan POP.
+	Contoh : A, B, C, D, E, Y adalah register
+
+4. Kelebihan menggunakan DMA :
+   a. Dapat menghemat waktu memproses
+   b. Cara yang lebih efisien untuk memindahkan data dari memori ke alat lainnya
+   c. CPU tidak terbebani oleh programmed I/O
+
+5. KATEGORI PIPELINE
+	1. Pipeline Unit Arithmetic
+	   - Berguna untuk operasi vektor 
+ 	2. Pipeline Unit Instruction
+	   - Berguna untuk komputer yang mempunyai set instruksi yang sederhana
